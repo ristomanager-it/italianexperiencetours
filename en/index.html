@@ -252,7 +252,10 @@ h2{font-size:clamp(28px,6vw,42px)}
     <div class="btns"><a class="btn" href="#reserve">Book your place</a><a class="btn ghost" href="#days">See the itinerary</a></div>
   </div>
 </header>
-<main>
+<main><section class="film" aria-label="The journey in 26 seconds"><div class="wrap"><h2>The journey in 26 seconds</h2><p class="lead" style="margin-top:10px">Rome, Florence, Tuscany, Civita di Bagnoregio, Naples and Capri: the places you will live, not just see.</p>
+<video class="film-v" autoplay muted loop playsinline controls preload="metadata" poster="https://cuhcscpvhypoaplcmtjk.supabase.co/storage/v1/object/public/media-aziende/e2238dff-9975-4da5-a1bb-4c22eec1b902/video/copertina-16x9.jpg"><source media="(max-width:640px)" src="https://cuhcscpvhypoaplcmtjk.supabase.co/storage/v1/object/public/media-aziende/e2238dff-9975-4da5-a1bb-4c22eec1b902/video/web-9x16.mp4" type="video/mp4"><source src="https://cuhcscpvhypoaplcmtjk.supabase.co/storage/v1/object/public/media-aziende/e2238dff-9975-4da5-a1bb-4c22eec1b902/video/web-16x9.mp4" type="video/mp4"></video>
+<div class="btns" style="margin-top:16px"><a class="btn" href="#reserve">Book your place</a><a class="btn ghost" href="#days">See the itinerary</a></div></div></section>
+
 <section class="facts"><div class="wrap"><h2>Italian Experience at a glance</h2><dl><dt>Length</dt><dd>10 days, 9 nights; extensions of 4 nights to Capri by sailboat or Milan and Venice</dd><dt>Base</dt><dd>Campo Antico, our family farm in Tuscia, 40 minutes from Rome, with 8 rustic rooms and a pool</dd><dt>Group</dt><dd>Small groups of up to 16 guests, or private trips for families and friends</dd><dt>Highlights</dt><dd>Rome and the Vatican with private guides, Florence, Civita di Bagnoregio, Antinori in Chianti Classico, the Cotarella winery, four cooking classes</dd><dt>Price</dt><dd>From €4,900 per person in a double room; single room +€690</dd><dt>Included</dt><dd>Tour leader throughout, guides, museum tickets, all meals in the programme, trains, coach, Rome airport transfers, travel insurance</dd></dl></div></section>
 <section><div class="wrap"><h2>From the Etruscans to Antinori</h2><p class="lead" style="margin-top:14px">The Etruscans were among the first to make wine in Italy, right here in Tuscia. Every day of the journey weaves the same three threads: what you see in the morning, what you drink at lunch, what you cook at night.</p>
 <div class="thread"><div><h3>Art &amp; history</h3><p>Rome with a private guide, Florence overnight, Civita di Bagnoregio on its cliff, wine cellars carved into tufa stone.</p></div><div><h3>Wine</h3><p>Lunch at Antinori nel Chianti Classico in Bargino, a day with the Cotarella family, tastings chosen to match what you cook.</p></div><div><h3>The Italian kitchen</h3><p>Hands-on classes with a working chef: fresh pasta, the market, a Tuscan menu, and a gala dinner to close.</p></div></div></div></section>
@@ -263,7 +266,170 @@ h2{font-size:clamp(28px,6vw,42px)}
 <p class="note">Prices per person sharing a double room. Single room: +€690 on the main tour, +€390 for Milan &amp; Venice. Double cabins only on the boat.</p><p class="note">Departure guaranteed from 6 guests. If the minimum isn’t reached, your deposit is refunded in full.</p>
 <h3 style="margin-top:34px;font-size:26px">Three ways to travel with us</h3>
 <div class="facts" style="margin-top:20px"><div class="fact"><h3>Small-group departures</h3><p>Set dates, up to 16 guests. Join as a couple or on your own.</p><p><b>From €4,900 per person</b></p></div><div class="fact"><h3>Private journeys</h3><p>Your dates, the whole farm to yourselves. For friends and families.</p><p><b>Price on request</b></p></div><div class="fact"><h3>For travel advisors</h3><p>Group allotments, net rates and commission for your clients.</p><p><b>Ask for the trade sheet</b></p></div></div>
-<div class="btns" style="margin-top:26px"><a class="btn" href="https://wa.me/393930965070?text=Book your place%20%E2%80%93%20Italian%20Experience">Message us on WhatsApp</a></div></div></section><section id="reserve"><div class="wrap"><h2>Book in two minutes</h2><p class="lead" style="margin-top:12px">Choose your departure, how many you are and the room. We confirm availability on WhatsApp the same day; a 30% deposit secures your place.</p><div class="bk"><label>Departure<select id="bDep"><option value="1">Harvest Edition · Sep 2–11, 2027</option><option value="0">Chestnut Edition · Oct 6–15, 2027</option><option value="0">Olive Oil Edition · Nov 10–19, 2027</option></select></label><label>Travelers<select id="bN"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label><label>Room<select id="bR"><option value="d">Double / twin (shared)</option><option value="s">Single</option></select></label><label>Extension<select id="bE"><option value="">No extension</option><option value="c">Naples & Capri by sail (+4 nights)</option><option value="v">Milan & Venice (+4 nights)</option></select></label></div><div class="bksum"><div><span>Total</span><b id="bTot"></b></div><div><span>Deposit to secure your place (30%)</span><b id="bDepo"></b></div><a class="btn" id="bGo" href="https://wa.me/393930965070">Reserve on WhatsApp</a></div></div><script>(function(){var $=function(i){return document.getElementById(i)};var L=document.documentElement.lang||"en";var US=L==="en-US";function m(n){var e=new Intl.NumberFormat(L,{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(n);return US?e+" (≈ "+new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(Math.round(n*1.14/10)*10)+")":e}function c(){var n=+$("bN").value,s=$("bR").value==="s",hi=$("bDep").value==="1",e=$("bE").value;var p=4900+(s?690:0);if(e==="c")p+=hi?2900:2600;if(e==="v")p+=2900+(s?390:0);var t=p*n;$("bTot").textContent=m(t);$("bDepo").textContent=m(Math.round(t*0.3));var txt="Hi! I'd like to reserve Italian Experience:"+"\n- "+$("bDep").selectedOptions[0].text+"\n- "+n+" x "+$("bR").selectedOptions[0].text+"\n- "+$("bE").selectedOptions[0].text+"\n- "+$("bTot").textContent;$("bGo").href="https://wa.me/393930965070?text="+encodeURIComponent(txt)}["bDep","bN","bR","bE"].forEach(function(i){$(i).addEventListener("change",c)});$("bGo").addEventListener("click",function(){if(window.rfEvento)rfEvento("click_whatsapp")});c()})();</script></section>
+<div class="btns" style="margin-top:26px"><a class="btn" href="https://wa.me/393930965070?text=Book your place%20%E2%80%93%20Italian%20Experience">Message us on WhatsApp</a></div></div></section><section id="reserve" class="rsv"><div class="wrap">
+<h2>Build your journey</h2><p class="lead" style="margin-top:12px">Choose the departure, add your rooms and the extension. The price updates as you go; a 30% deposit secures your places.</p>
+<div class="rs-step"><div class="rs-lab">1 · Departure</div><div class="rs-dep"><label><input type="radio" name="dep" value="harvest" data-alta="1" checked><span><b>Harvest Edition</b><small>Sep 2–11, 2027 · grape harvest</small></span></label><label><input type="radio" name="dep" value="chestnut" data-alta="0"><span><b>Chestnut Edition</b><small>Oct 6–15, 2027 · autumn in Tuscia</small></span></label><label><input type="radio" name="dep" value="olive" data-alta="0"><span><b>Olive Oil Edition</b><small>Nov 10–19, 2027 · new olive oil</small></span></label></div></div>
+<div class="rs-step"><div class="rs-lab">2 · Your rooms</div><p class="rs-note" style="margin:0 0 10px">Add a room and tell us who sleeps in it: we give you the right room, on the farm first and then at our hotel in Orte. The more of you share a room, the less each guest pays. Children from 3 to 12 pay half; under 3 they are free and sleep with you.</p><div id="rsRooms"></div><button type="button" class="rs-add" id="rsAdd">+ Add a room</button><p class="rs-note" id="rsMax"></p></div>
+<div class="rs-step"><div class="rs-lab">3 · Extension <span class="rs-opt">optional, 4 more nights</span></div><div class="rs-ext">
+<label><input type="radio" name="ext" value="" checked><span><b>No extension</b><small>back to Rome on day 10</small></span></label>
+<label><input type="radio" name="ext" value="capri"><span><b>Naples & Capri by sail</b><small id="rsCapriP"></small></span></label>
+<label><input type="radio" name="ext" value="venice"><span><b>Milan & Venice</b><small id="rsVenP"></small></span></label>
+</div><p class="rs-note">The extension is for your whole party. If only some of you join, ask us.</p></div>
+<div class="rs-sum" id="rsSum"></div>
+<div class="rs-step"><div class="rs-lab">4 · Your details</div><div class="rs-grid">
+<label>Full name<input id="rsNome" autocomplete="name" placeholder="Name and surname"></label>
+<label>Email<input id="rsMail" type="email" autocomplete="email" placeholder="name@email.com"></label>
+<label>WhatsApp<input id="rsTel" type="tel" autocomplete="tel" placeholder="+1 …"></label>
+<label>Country<input id="rsPaese" autocomplete="country-name" placeholder="United States"></label>
+</div><input class="rs-hp" id="rsHp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="button" class="btn rs-pay" id="rsBank">Reserve and pay by bank transfer</button>
+<button type="button" class="btn ghost rs-pay" id="rsAsk">Ask us a question</button>
+<a class="btn ghost rs-pay" id="rsWa" href="https://wa.me/393930965070" target="_blank" rel="noopener">Write to us on WhatsApp</a>
+<p class="rs-note">Bank transfer: your places are held for 5 days. Free cancellation up to 30 days before departure, deposit refunded in full. The balance is due 15 days before arrival.</p>
+<div class="rs-msg" id="rsMsg" hidden></div>
+<div id="rsQ" hidden><div class="rs-ok"><h3>Ask us anything</h3><p class="rs-note" style="margin:0 0 8px">Dates, rooms, food, accessibility, a private group: write to us and we reply within the day.</p><label style="font-size:14px">Your question<textarea class="rs-ta" id="rsQm"></textarea></label><button type="button" class="btn rs-pay" id="rsQs">Send</button></div></div>
+<div id="rsOk" hidden></div>
+</div></div></section>
+<style>
+.rsv .rs-step{margin-top:26px}.rs-lab{font-weight:600;font-size:18px;margin-bottom:10px}.rs-opt{font-weight:400;font-size:14px;opacity:.7}
+.rs-dep,.rs-ext{display:grid;gap:10px}@media(min-width:760px){.rs-dep,.rs-ext{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rs-dep label,.rs-ext label{display:block;cursor:pointer}.rs-dep input,.rs-ext input{position:absolute;opacity:0;pointer-events:none}
+.rs-dep span,.rs-ext span{display:block;border:1.5px solid #d6d2c6;border-radius:12px;padding:14px 16px;background:#fff;min-height:64px}
+.rs-dep small,.rs-ext small{display:block;opacity:.7;font-size:14px;margin-top:2px}
+.rs-dep input:checked+span,.rs-ext input:checked+span{border-color:#6b1b2a;box-shadow:0 0 0 2px #6b1b2a inset;background:#fbf6f6}
+.rs-room{border:1.5px solid #d6d2c6;border-radius:12px;padding:14px 16px;background:#fff;margin-bottom:10px}
+.rs-room-h{display:flex;justify-content:space-between;align-items:center;font-weight:600}.rs-x{background:none;border:0;font-size:22px;line-height:1;color:#8a8a82;cursor:pointer;padding:4px 8px}
+.rs-place{margin-bottom:14px}.rs-place h4{margin:0 0 2px;font-size:16px}.rs-place p{margin:0 0 8px;font-size:14px;opacity:.75}
+.rs-cat{display:grid;gap:8px}@media(min-width:760px){.rs-cat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rs-ct{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1.5px solid #d6d2c6;border-radius:12px;padding:10px 12px;background:#fff}
+.rs-ct b{display:block;font-size:15px}.rs-ct small{display:block;font-size:13px;opacity:.7}
+.rs-ct button{flex:none;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid #6b1b2a;background:#fff;color:#6b1b2a;font:inherit;font-weight:600;cursor:pointer}
+.rs-ct button[disabled]{opacity:.35;cursor:default}.rs-empty{font-size:14px;opacity:.7;border:1.5px dashed #d6d2c6;border-radius:12px;padding:12px 14px}
+.rs-occ{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.rs-eta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}.rs-eta label{font-size:13px}.rs-eta select{display:block;width:100%;min-height:42px;margin-top:3px;border:1.5px solid #d6d2c6;border-radius:8px;background:#fff;font:inherit}.rs-eta select.manca{border-color:#c0574a}.rs-tw{display:flex;gap:8px;align-items:center;font-size:14px;margin-top:8px}.rs-auto{margin-top:10px;font-size:15px;background:#f6f2ea;border-radius:8px;padding:8px 10px}.rs-auto.ko{background:#fbe9e6;color:#8a2a1c}
+.rs-types button{min-height:56px;border-radius:10px;border:1.5px solid #d6d2c6;background:#fff;font:inherit;font-size:15px;cursor:pointer;padding:6px}
+.rs-types button small{display:block;font-size:12px;opacity:.7}.rs-types button[aria-pressed=true]{border-color:#6b1b2a;box-shadow:0 0 0 2px #6b1b2a inset;background:#fbf6f6}
+.rs-add{margin-top:4px;min-height:48px;padding:10px 20px;border-radius:999px;border:1.5px dashed #6b1b2a;background:transparent;color:#6b1b2a;font:inherit;font-weight:600;cursor:pointer;width:100%}
+.rs-note{font-size:14px;opacity:.75;margin:8px 0 0}
+.rs-who{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;border:1.5px solid #d6d2c6;border-radius:12px;padding:10px 16px;background:#fff}
+.rs-cnt{display:flex;align-items:center;gap:12px}.rs-cnt button{width:42px;height:42px;border-radius:50%;border:1.5px solid #6b1b2a;background:#fff;color:#6b1b2a;font-size:22px;cursor:pointer}.rs-cnt output{font-size:22px;min-width:24px;text-align:center}
+.rs-sum{margin-top:26px;border-radius:14px;background:#fff;border:1.5px solid #d6d2c6;padding:16px 18px}
+.rs-sum .l{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #eee9de;font-size:15px}.rs-sum .l span:last-child{white-space:nowrap}
+.rs-sum .t{display:flex;justify-content:space-between;gap:12px;padding-top:10px;font-size:20px;font-weight:600}.rs-sum .d{display:flex;justify-content:space-between;gap:12px;color:#6b1b2a;font-weight:600;padding-top:4px}
+.rs-grid{display:grid;gap:10px}@media(min-width:760px){.rs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rs-grid label{display:block;font-size:14px}.rs-grid input{display:block;width:100%;margin-top:4px;min-height:48px;border:1.5px solid #d6d2c6;border-radius:10px;padding:10px 12px;font:inherit;font-size:16px;background:#fff;box-sizing:border-box}
+.rs-pay{display:block;width:100%;text-align:center;margin-top:12px;box-sizing:border-box}
+.rs-msg{margin-top:14px;border-radius:12px;padding:14px 16px;background:#f4efe3;font-size:15px}
+.rs-ta{display:block;width:100%;margin-top:4px;min-height:110px;border:1.5px solid #d6d2c6;border-radius:10px;padding:10px 12px;font:inherit;font-size:16px;background:#fff;box-sizing:border-box}.rs-hp{position:absolute;left:-9999px;opacity:0}.rs-ok{border:1.5px solid #6b1b2a;background:#fff;border-radius:14px;padding:16px 18px;margin-top:14px}.rs-ok h3{margin:0 0 8px;font-size:20px}.rs-kv{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid #eee9de;font-size:15px;flex-wrap:wrap}.rs-kv b{word-break:break-all}.rs-cp{border:1px solid #d6d2c6;background:#fff;border-radius:8px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer;margin-left:6px}.film{padding:56px 0}.film-v{display:block;width:100%;max-width:1100px;margin:18px auto 0;border-radius:14px;background:#111;aspect-ratio:16/9;object-fit:cover}@media(max-width:640px){.film-v{aspect-ratio:9/16;max-height:82vh}}</style><script>(function(){
+var $=function(i){return document.getElementById(i)};
+var T={"film_t": "The journey in 26 seconds", "film_p": "Rome, Florence, Tuscany, Civita di Bagnoregio, Naples and Capri: the places you will live, not just see.", "film_b1": "Book your place", "film_b2": "See the itinerary", "h2": "Build your journey", "lead": "Choose the departure, add your rooms and the extension. The price updates as you go; a 30% deposit secures your places.", "s1": "1 · Departure", "s2": "2 · Your rooms", "s3": "3 · Extension", "s3o": "optional, 4 more nights", "s4": "4 · Your details", "rooms_note": "Add a room and tell us who sleeps in it: we give you the right room, on the farm first and then at our hotel in Orte. The more of you share a room, the less each guest pays. Children from 3 to 12 pay half; under 3 they are free and sleep with you.", "add": "+ Add a room", "room": "Room", "adults": "Adults", "children": "Children (0–12)", "child": "Child", "age": "Age", "under1": "under 1", "year": "year", "years": "years", "twin": "Two single beds", "per_adult": "per adult", "per_child": "per child", "single_use": "single use", "too_many": "Up to 5 guests per room (plus a baby under 3): add another room.", "no_room": "No room for {n} left on this departure: split into smaller rooms or ask us.", "max_msg": "Up to 16 guests per departure. For a larger group, ask us.", "ext_none": "No extension", "ext_none_s": "back to Rome on day 10", "ext_capri": "Naples & Capri by sail", "ext_venice": "Milan & Venice", "ext_venice_s": "+{p} per adult · single +{s}", "ext_capri_s": "+{p} per adult · children half", "ext_note": "The extension is for your whole party. If only some of you join, ask us.", "tour": "10-day tour", "adults_in": "adults in", "children_in": "children 3–12 in", "occ": {"1": "single room", "2": "room for 2", "3": "room for 3", "4": "room for 4", "5": "room for 5"}, "under3": "Under 3", "free": "free", "total": "Total", "deposit": "Deposit today (30%)", "age_missing": "Add the age of each child to see the exact price.", "adults_w": "adults", "child_w": "child", "children_w": "children", "nome": "Full name", "nome_ph": "Name and surname", "email": "Email", "tel": "WhatsApp", "tel_ph": "+1 …", "paese": "Country", "paese_ph": "United States", "bank": "Reserve and pay by bank transfer", "ask": "Ask us a question", "wa": "Write to us on WhatsApp", "cond": "Bank transfer: your places are held for 5 days. Free cancellation up to 30 days before departure, deposit refunded in full. The balance is due 15 days before arrival.", "err_rooms": "Add at least one room first.", "err_age": "Please add the age of each child.", "err_room": "One of your rooms is not available: please change it first.", "err_contact": "Please add your name, email and WhatsApp number.", "err_full": "This departure has fewer places left: {n}. Change your rooms or ask us.", "err_generic": "Something went wrong: please try again or write to us on WhatsApp.", "wait": "Reserving your places…", "ok_t": "Your places are held until {d}", "ok_code": "Booking code", "ok_rooms": "Your rooms", "ok_amount": "Deposit to transfer", "ok_benef": "Beneficiary", "ok_iban": "IBAN", "ok_bic": "BIC / SWIFT", "ok_bic_v": "we send it to you by email and WhatsApp today", "ok_ref": "Payment reference", "ok_after": "When the transfer is done, send us the receipt on WhatsApp: we confirm your places the same day.", "ok_wa": "Send the receipt on WhatsApp", "copy": "Copy", "copied": "Copied", "q_t": "Ask us anything", "q_p": "Dates, rooms, food, accessibility, a private group: write to us and we reply within the day.", "q_msg": "Your question", "q_send": "Send", "q_ok": "Thank you! We reply within the day by email or WhatsApp.", "wa_hi": "Hi! I'd like to book Italian Experience:", "wa_total": "Total", "rooms_w": "rooms", "nomi": {"ca2": "Double room", "ca3": "Triple room", "ca4": "Family room", "aqS": "Superior double", "aqE": "Classic double", "aqT": "Twin room", "aq3": "Triple room", "aq4": "Quadruple room", "aq5": "Family suite"}, "loc_ca": "Campo Antico (farm)", "loc_aq": "Hotel Aquila (Orte)"}, LOC="en-GB", US=false, FN="https://cuhcscpvhypoaplcmtjk.supabase.co/functions/v1/tour-prenota", LANG="en";
+var P={base:4900,occ:{1:690,2:0,3:-75,4:-110,5:-150},capriBassa:2600,capriAlta:2900,venice:2900,veniceSingle:390,maxOspiti:16,deposito:0.3,bimboDa:3,bimboA:12,quota:0.5};
+var CAMERE=[{k:"ca2",l:"ca",posti:2,qta:5},{k:"ca3",l:"ca",posti:3,qta:1},{k:"ca4",l:"ca",posti:4,qta:2},{k:"aqS",l:"aq",posti:2,qta:6},{k:"aqE",l:"aq",posti:2,qta:15},{k:"aqT",l:"aq",posti:2,qta:5,twin:true},{k:"aq3",l:"aq",posti:3,qta:2},{k:"aq4",l:"aq",posti:4,qta:1},{k:"aq5",l:"aq",posti:5,qta:1}];
+var LIBERE=null,POSTI=P.maxOspiti,MAX=5,stanze=[{a:2,b:[],twin:false}];
+function eur(n){var e=new Intl.NumberFormat(LOC,{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(n);return US?e+" (≈ "+new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(Math.round(n*1.14/10)*10)+")":e}
+function letto(s){return s.a+s.b.filter(function(e){return e!=null&&e>=P.bimboDa}).length}
+function letti(){return stanze.reduce(function(t,s){return t+letto(s)},0)}
+function etaMancanti(){return stanze.some(function(s){return s.b.some(function(e){return e==null})})}
+function pp(s){return P.base+(P.occ[letto(s)]||0)}
+function meta(x){return Math.round(x*P.quota)}
+function nb(n){return n+" "+(n===1?T.child_w:T.children_w)}
+function dep(){return document.querySelector("input[name=dep]:checked")}
+function ext(){return document.querySelector("input[name=ext]:checked").value}
+function assegna(){var u={},out=[];stanze.forEach(function(s){var need=Math.max(2,letto(s));
+ var lib=CAMERE.filter(function(c){var cap=LIBERE?LIBERE[c.k]:c.qta;return c.posti>=need&&(u[c.k]||0)<cap});
+ var pref=lib.filter(function(c){return s.twin?!!c.twin:!c.twin});
+ var lista=(pref.length?pref:(s.twin?[]:lib)).slice();
+ lista.sort(function(x,y){return (x.posti-y.posti)||((x.l==="ca"?0:1)-(y.l==="ca"?0:1))});
+ var c=lista[0]||null;if(c)u[c.k]=(u[c.k]||0)+1;out.push(c)});return out}
+function cnt(lab,tp,i,v){return '<div class="rs-occ"><span>'+lab+'</span><div class="rs-cnt"><button type="button" data-'+tp+'m="'+i+'" aria-label="-">−</button><output>'+v+'</output><button type="button" data-'+tp+'p="'+i+'" aria-label="+">+</button></div></div>'}
+function disegna(){
+ var ass=assegna(),pieno=letti()>=Math.min(P.maxOspiti,POSTI),r="";
+ stanze.forEach(function(s,i){var c=ass[i],eta="";
+  s.b.forEach(function(e,j){var o='<option value="">'+T.age+'</option>';for(var k=0;k<=P.bimboA;k++)o+='<option value="'+k+'"'+(e===k?' selected':'')+'>'+(k===0?T.under1:k+" "+(k===1?T.year:T.years))+'</option>';
+   eta+='<label>'+T.child+' '+(j+1)+'<select data-eta="'+i+'" data-j="'+j+'"'+(e==null?' class="manca"':'')+'>'+o+'</select></label>'});
+  r+='<div class="rs-room"><div class="rs-room-h"><span>'+T.room+' '+(i+1)+'</span>'+(stanze.length>1?'<button type="button" class="rs-x" data-x="'+i+'" aria-label="×">×</button>':'')+'</div>'
+   +cnt(T.adults,'a',i,s.a)+cnt(T.children,'b',i,s.b.length)+(eta?'<div class="rs-eta">'+eta+'</div>':'')
+   +(s.a===2&&!s.b.length?'<label class="rs-tw"><input type="checkbox" data-tw="'+i+'"'+(s.twin?' checked':'')+'> '+T.twin+'</label>':'')
+   +(letto(s)>MAX?'<div class="rs-auto ko">'+T.too_many+'</div>'
+     :c?'<div class="rs-auto"><b>'+T.nomi[c.k]+'</b> · '+(c.l==="ca"?T.loc_ca:T.loc_aq)+' · '+eur(pp(s))+' '+T.per_adult+(letto(s)===1?' ('+T.single_use+')':'')+(s.b.some(function(e){return e!=null&&e>=P.bimboDa})?' · '+eur(meta(pp(s)))+' '+T.per_child:'')+'</div>'
+     :'<div class="rs-auto ko">'+T.no_room.replace("{n}",letto(s))+'</div>')+'</div>'});
+ $("rsRooms").innerHTML=r;$("rsAdd").hidden=pieno;$("rsMax").textContent=pieno?T.max_msg:"";
+}
+function conti(){
+ var e=ext(),alta=dep().getAttribute("data-alta")==="1",righe=[],ad=0,bim=0,neo=0,sing=0,ga={},gb={};
+ stanze.forEach(function(s){var o=letto(s);ga[o]=(ga[o]||0)+s.a;ad+=s.a;if(o===1)sing+=s.a;
+  s.b.forEach(function(x){if(x==null)return;if(x>=P.bimboDa){gb[o]=(gb[o]||0)+1;bim++}else neo++})});
+ Object.keys(ga).sort().forEach(function(o){var p=P.base+(P.occ[o]||0);
+  if(ga[o])righe.push([T.tour+" · "+T.adults_in+" "+T.occ[o]+" · "+ga[o]+" × "+eur(p),p*ga[o]]);
+  if(gb[o])righe.push([T.tour+" · "+T.children_in+" "+T.occ[o]+" · "+gb[o]+" × "+eur(meta(p)),meta(p)*gb[o]])});
+ if(neo)righe.push([T.under3+" · "+nb(neo),0]);
+ if(e==="capri"){var pc=alta?P.capriAlta:P.capriBassa;righe.push([T.ext_capri+" · "+ad+" "+T.adults_w+" × "+eur(pc)+(bim?" + "+nb(bim)+" × "+eur(meta(pc)):""),pc*ad+meta(pc)*bim])}
+ if(e==="venice"){righe.push([T.ext_venice+" · "+ad+" "+T.adults_w+" × "+eur(P.venice)+(bim?" + "+nb(bim)+" × "+eur(meta(P.venice)):""),P.venice*ad+meta(P.venice)*bim]);if(sing)righe.push([T.ext_venice+" · "+T.single_use+" · "+sing+" × "+eur(P.veniceSingle),P.veniceSingle*sing])}
+ var tot=righe.reduce(function(t,r){return t+r[1]},0);return {righe:righe,tot:tot,depo:Math.round(tot*P.deposito)};
+}
+function aggiorna(){
+ var alta=dep().getAttribute("data-alta")==="1";
+ $("rsCapriP").textContent=T.ext_capri_s.replace("{p}",eur(alta?P.capriAlta:P.capriBassa));
+ $("rsVenP").textContent=T.ext_venice_s.replace("{p}",eur(P.venice)).replace("{s}",eur(P.veniceSingle));
+ var c=conti(),h="";c.righe.forEach(function(r){h+='<div class="l"><span>'+r[0]+'</span><span>'+(r[1]?eur(r[1]):T.free)+'</span></div>'});
+ h+='<div class="t"><span>'+T.total+'</span><span>'+eur(c.tot)+'</span></div><div class="d"><span>'+T.deposit+'</span><span>'+eur(c.depo)+'</span></div>';
+ if(etaMancanti())h+='<p class="rs-note" style="color:#8a2a1c">'+T.age_missing+'</p>';
+ $("rsSum").innerHTML=h;
+ var ass=assegna(),tx=T.wa_hi+"\n- "+dep().parentNode.querySelector("b").textContent+" ("+dep().parentNode.querySelector("small").textContent+")";
+ stanze.forEach(function(s,i){var c=ass[i];tx+="\n- "+(c?T.nomi[c.k]:T.room)+": "+s.a+" "+T.adults_w+(s.b.length?", "+nb(s.b.length)+" ("+s.b.join("/")+")":"")});
+ if(ext())tx+="\n- "+document.querySelector("input[name=ext]:checked").parentNode.querySelector("b").textContent;
+ tx+="\n- "+T.wa_total+" "+eur(c.tot);$("rsWa").href="https://wa.me/393930965070?text="+encodeURIComponent(tx);
+}
+function ridisegna(){stanze.forEach(function(x){if(!(x.a===2&&!x.b.length))x.twin=false});disegna();aggiorna()}
+function libere(){var d=dep().value;fetch(FN,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({azione:"disponibilita",partenza:d})}).then(function(r){return r.json()}).then(function(j){if(j&&j.success&&dep().value===d){LIBERE=j.libere;POSTI=j.posti_liberi;ridisegna()}}).catch(function(){})}
+$("rsRooms").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ var g=function(k){return b.hasAttribute(k)?stanze[+b.getAttribute(k)]:null},s;
+ if(b.hasAttribute("data-x"))stanze.splice(+b.getAttribute("data-x"),1);
+ else if((s=g("data-am"))){if(s.a>1)s.a--}
+ else if((s=g("data-ap"))){if(letto(s)<MAX&&letti()<Math.min(P.maxOspiti,POSTI))s.a++}
+ else if((s=g("data-bm"))){s.b.pop()}
+ else if((s=g("data-bp"))){if(s.a+s.b.length<MAX+1&&letti()<Math.min(P.maxOspiti,POSTI))s.b.push(null)}
+ ridisegna()});
+$("rsRooms").addEventListener("change",function(e){var t=e.target;
+ if(t.hasAttribute("data-tw"))stanze[+t.getAttribute("data-tw")].twin=t.checked;
+ if(t.hasAttribute("data-eta"))stanze[+t.getAttribute("data-eta")].b[+t.getAttribute("data-j")]=t.value===""?null:+t.value;
+ ridisegna()});
+$("rsAdd").addEventListener("click",function(){stanze.push({a:letti()<Math.min(P.maxOspiti,POSTI)-1?2:1,b:[],twin:false});ridisegna()});
+document.querySelectorAll("input[name=dep]").forEach(function(r){r.addEventListener("change",function(){LIBERE=null;POSTI=P.maxOspiti;ridisegna();libere()})});
+document.querySelectorAll("input[name=ext]").forEach(function(r){r.addEventListener("change",aggiorna)});
+function msg(t){var m=$("rsMsg");m.hidden=!t;m.textContent=t||""}
+function contatti(){var ok=$("rsNome").value.trim()&&/\S+@\S+\.\S+/.test($("rsMail").value)&&$("rsTel").value.replace(/\D/g,"").length>5;if(!ok)msg(T.err_contact);return ok}
+function utm(){var q=new URLSearchParams(location.search);return {utm_source:q.get("utm_source")||"",utm_campaign:q.get("utm_campaign")||""}}
+function base(){return Object.assign({nome:$("rsNome").value.trim(),email:$("rsMail").value.trim(),telefono:$("rsTel").value.trim(),paese:$("rsPaese").value.trim(),lingua:LANG,sito_web:$("rsHp").value},utm())}
+function traccia(ev){try{if(window.rfEvento)window.rfEvento({dataset:{track:ev}})}catch(_){}}
+$("rsBank").addEventListener("click",function(){
+ if(!stanze.length){msg(T.err_rooms);return}if(etaMancanti()){msg(T.err_age);return}
+ if(stanze.some(function(s){return letto(s)>MAX})||assegna().some(function(c){return !c})){msg(T.err_room);return}
+ if(!contatti())return;
+ var b=$("rsBank");b.disabled=true;msg(T.wait);
+ fetch(FN,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.assign(base(),{azione:"crea",partenza:dep().value,estensione:ext(),stanze:stanze.map(function(s){return {a:s.a,b:s.b,twin:s.twin}})}))})
+ .then(function(r){return r.json()}).then(function(j){b.disabled=false;
+  if(!j||!j.success){if(j&&j.error==="full"){POSTI=j.posti_liberi;msg(T.err_full.replace("{n}",j.posti_liberi))}else if(j&&j.error==="room_unavailable"){msg(T.err_room);libere()}else msg(T.err_generic);return}
+  msg("");traccia("prenotazione_completata");
+  try{if(window.fbq)fbq("track","Lead",{content_name:"italian-experience",value:j.acconto,currency:"EUR"});if(window.gtag)gtag("event","generate_lead",{value:j.acconto,currency:"EUR"})}catch(_){}
+  var d=new Date(j.scadenza).toLocaleDateString(LOC,{day:"numeric",month:"long",year:"numeric"});
+  var cognome=$("rsNome").value.trim().split(" ").pop(),ref=j.codice+" "+cognome;
+  var kv=function(k,v,cp){return '<div class="rs-kv"><span>'+k+'</span><span><b>'+v+'</b>'+(cp?'<button type="button" class="rs-cp" data-cp="'+cp+'">'+T.copy+'</button>':'')+'</span></div>'};
+  var ibanF=(j.iban||"").replace(/(.{4})/g,"$1 ").trim();
+  var wa="https://wa.me/393930965070?text="+encodeURIComponent(T.ok_wa+" · "+T.ok_code+" "+j.codice);
+  $("rsOk").innerHTML='<div class="rs-ok"><h3>'+T.ok_t.replace("{d}",d)+'</h3>'+kv(T.ok_code,j.codice)+kv(T.ok_rooms,(j.camere||[]).join(", "))+kv(T.ok_amount,eur(j.acconto),String(j.acconto))+kv(T.ok_benef,j.intestatario||"")+kv(T.ok_iban,ibanF,j.iban||"")+kv(T.ok_bic,T.ok_bic_v)+kv(T.ok_ref,ref,ref)+'<p class="rs-note">'+T.ok_after+'</p><a class="btn rs-pay" href="'+wa+'" target="_blank" rel="noopener">'+T.ok_wa+'</a></div>';
+  $("rsOk").hidden=false;$("rsOk").scrollIntoView({behavior:"smooth",block:"start"});
+ }).catch(function(){b.disabled=false;msg(T.err_generic)})});
+$("rsOk").addEventListener("click",function(e){var c=e.target.closest("[data-cp]");if(!c)return;try{navigator.clipboard.writeText(c.getAttribute("data-cp"));c.textContent=T.copied}catch(_){}});
+$("rsAsk").addEventListener("click",function(){$("rsQ").hidden=false;$("rsQm").focus()});
+$("rsQs").addEventListener("click",function(){
+ if(!contatti())return;var t=$("rsQm").value.trim();if(t.length<3){$("rsQm").focus();return}
+ var b=$("rsQs");b.disabled=true;
+ fetch(FN,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.assign(base(),{azione:"info",partenza:dep().value,messaggio:t}))})
+ .then(function(r){return r.json()}).then(function(j){b.disabled=false;if(j&&j.success){$("rsQ").innerHTML='<div class="rs-ok"><h3>'+T.q_ok+'</h3></div>';msg("");traccia("richiesta_info");try{if(window.fbq)fbq("track","Contact")}catch(_){}}else msg(T.err_generic)})
+ .catch(function(){b.disabled=false;msg(T.err_generic)})});
+disegna();aggiorna();libere();
+})();
+</script>
 <section><div class="wrap two"><div><h2>Finish by the sea, or in Milan and Venice</h2><h3 style="margin-top:24px">Naples &amp; Capri by sail</h3><p class="note">+4 NIGHTS · FROM €2,600</p><p>A day in Naples for the old town and real Neapolitan pizza, then three days under sail around the Gulf with your tour leader, ending in Capri. Up to 8 guests per boat. Frecciarossa high-speed train back to Rome.</p><p class="note">From June to September €2,900. Minimum 6 guests per boat.</p><h3 style="margin-top:20px">Milan &amp; Venice</h3><p class="note">+4 NIGHTS · FROM €2,900</p><p>By train to Milan for two nights, with the Duomo and Leonardo’s Last Supper, then two nights in Venice with a local guide. Frecciarossa high-speed train back to Rome.</p></div><img src="https://campoanticowedding.it/img/capri-faraglioni-sailing-tour.jpg" alt="Faraglioni rocks, Capri" width="1100" height="735" loading="lazy" decoding="async"></div></section>
 <section><div class="wrap"><h2>A real Italian farm, not a hotel</h2><p class="lead" style="margin-top:14px">Campo Antico sits in the countryside near Orte, 40 minutes from Rome. Simple rustic rooms, a pool open from April to October, and the kitchen where everything is made.</p><p class="note">8 farmhouse rooms · Pool · April–October · 40 minutes from Rome</p>
 <div class="strip"><img src="https://campoanticowedding.it/img/farmhouse-room-campo-antico.jpg" alt="A rustic room at Campo Antico" width="800" height="532" loading="lazy" decoding="async"><img src="https://campoanticowedding.it/img/olive-grove-garden-campo-antico.jpg" alt="Olive grove garden at Campo Antico" width="908" height="540" loading="lazy" decoding="async"><img src="https://campoanticowedding.it/img/hotel-aquila-orte-guest-rooms.jpg" alt="Hotel Aquila, 8 km from the farm" width="1100" height="733" loading="lazy" decoding="async"></div></div></section>
