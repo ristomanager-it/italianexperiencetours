@@ -252,7 +252,10 @@ h2{font-size:clamp(28px,6vw,42px)}
     <div class="btns"><a class="btn" href="#reserve">Reservad vuestra plaza</a><a class="btn ghost" href="#days">Ver el itinerario</a></div>
   </div>
 </header>
-<main>
+<main><section class="film" aria-label="El viaje en 26 segundos"><div class="wrap"><h2>El viaje en 26 segundos</h2><p class="lead" style="margin-top:10px">Roma, Florencia, la Toscana, Civita di Bagnoregio, Nápoles y Capri: lugares que vivirás, no solo verás.</p>
+<video class="film-v" autoplay muted loop playsinline controls preload="metadata" poster="https://cuhcscpvhypoaplcmtjk.supabase.co/storage/v1/object/public/media-aziende/e2238dff-9975-4da5-a1bb-4c22eec1b902/video/copertina-16x9.jpg"><source media="(max-width:640px)" src="https://cuhcscpvhypoaplcmtjk.supabase.co/storage/v1/object/public/media-aziende/e2238dff-9975-4da5-a1bb-4c22eec1b902/video/web-9x16.mp4" type="video/mp4"><source src="https://cuhcscpvhypoaplcmtjk.supabase.co/storage/v1/object/public/media-aziende/e2238dff-9975-4da5-a1bb-4c22eec1b902/video/web-16x9.mp4" type="video/mp4"></video>
+<div class="btns" style="margin-top:16px"><a class="btn" href="#reserve">Reserva tu plaza</a><a class="btn ghost" href="#days">Ver el itinerario</a></div></div></section>
+
 <section class="facts"><div class="wrap"><h2>Italian Experience en breve</h2><dl><dt>Duración</dt><dd>10 días, 9 noches; extensiones de 4 noches a Capri en velero o a Milán y Venecia</dd><dt>Base</dt><dd>Campo Antico, nuestra finca familiar en la Tuscia, a 40 minutos de Roma, con 8 habitaciones rústicas y piscina</dd><dt>Grupo</dt><dd>Grupos reducidos de hasta 16 personas, o viajes privados para familias y amigos</dd><dt>Lo mejor</dt><dd>Roma y el Vaticano con guía privado, Florencia, Civita di Bagnoregio, Antinori en el Chianti Classico, la bodega Cotarella, cuatro clases de cocina</dd><dt>Precio</dt><dd>Desde 4.900 € por persona en habitación doble; individual +690 €</dd><dt>Incluido</dt><dd>Acompañante todo el viaje, guías, entradas a museos, todas las comidas del programa, trenes, autocar, traslados desde Roma, seguro de viaje</dd></dl></div></section>
 <section><div class="wrap"><h2>De los etruscos a Antinori</h2><p class="lead" style="margin-top:14px">Los etruscos fueron de los primeros en hacer vino en Italia, justo aquí, en la Tuscia. Cada día del viaje une tres hilos: lo que veis por la mañana, lo que bebéis al mediodía y lo que cocináis por la noche.</p>
 <div class="thread"><div><h3>Arte e historia</h3><p>Roma con guía privado, Florencia con una noche en la ciudad, Civita di Bagnoregio sobre su roca, bodegas excavadas en la toba.</p></div><div><h3>Vino</h3><p>Almuerzo en Antinori nel Chianti Classico, en Bargino, un día con la familia Cotarella y catas elegidas para acompañar lo que cocináis.</p></div><div><h3>La cocina italiana</h3><p>Clases prácticas con un chef de verdad: pasta fresca, el mercado, un menú toscano y una cena de gala para terminar.</p></div></div></div></section>
@@ -263,7 +266,170 @@ h2{font-size:clamp(28px,6vw,42px)}
 <p class="note">Precios por persona en habitación doble. Individual: +690 € en el tour, +390 € en Milán y Venecia. En el barco solo camarotes dobles.</p><p class="note">Salida garantizada con al menos 6 viajeros. Si no se alcanza el mínimo, se devuelve el anticipo íntegro.</p>
 <h3 style="margin-top:34px;font-size:26px">Tres formas de viajar con nosotros</h3>
 <div class="facts" style="margin-top:20px"><div class="fact"><h3>Salidas en grupo reducido</h3><p>Fechas fijas, máximo 16 personas. En pareja o solos.</p><p><b>Desde 4.900 € por persona</b></p></div><div class="fact"><h3>Viajes privados</h3><p>Vuestras fechas, toda la finca para vosotros. Para amigos y familias.</p><p><b>Precio bajo petición</b></p></div><div class="fact"><h3>Para agencias y asesores de viaje</h3><p>Plazas de grupo, tarifas netas y comisión para vuestros clientes.</p><p><b>Pedid las condiciones para agencias</b></p></div></div>
-<div class="btns" style="margin-top:26px"><a class="btn" href="https://wa.me/393930965070?text=Reservad vuestra plaza%20%E2%80%93%20Italian%20Experience">Escribidnos por WhatsApp</a></div></div></section><section id="reserve"><div class="wrap"><h2>Reserva en dos minutos</h2><p class="lead" style="margin-top:12px">Elige la salida, cuántos sois y la habitación. Confirmamos la disponibilidad por WhatsApp el mismo día; un depósito del 30% asegura tu plaza.</p><div class="bk"><label>Salida<select id="bDep"><option value="1">Edición Vendimia · 2–11 sep 2027</option><option value="0">Edición Castañas · 6–15 oct 2027</option><option value="0">Edición Aceite Nuevo · 10–19 nov 2027</option></select></label><label>Viajeros<select id="bN"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></label><label>Habitación<select id="bR"><option value="d">Doble / twin (compartida)</option><option value="s">Individual</option></select></label><label>Extensión<select id="bE"><option value="">Sin extensión</option><option value="c">Nápoles y Capri en velero (+4 noches)</option><option value="v">Milán y Venecia (+4 noches)</option></select></label></div><div class="bksum"><div><span>Total</span><b id="bTot"></b></div><div><span>Depósito para asegurar tu plaza (30%)</span><b id="bDepo"></b></div><a class="btn" id="bGo" href="https://wa.me/393930965070">Reservar por WhatsApp</a></div></div><script>(function(){var $=function(i){return document.getElementById(i)};var L=document.documentElement.lang||"en";var US=L==="en-US";function m(n){var e=new Intl.NumberFormat(L,{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(n);return US?e+" (≈ "+new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(Math.round(n*1.14/10)*10)+")":e}function c(){var n=+$("bN").value,s=$("bR").value==="s",hi=$("bDep").value==="1",e=$("bE").value;var p=4900+(s?690:0);if(e==="c")p+=hi?2900:2600;if(e==="v")p+=2900+(s?390:0);var t=p*n;$("bTot").textContent=m(t);$("bDepo").textContent=m(Math.round(t*0.3));var txt="\u00a1Hola! Quisiera reservar Italian Experience:"+"\n- "+$("bDep").selectedOptions[0].text+"\n- "+n+" x "+$("bR").selectedOptions[0].text+"\n- "+$("bE").selectedOptions[0].text+"\n- "+$("bTot").textContent;$("bGo").href="https://wa.me/393930965070?text="+encodeURIComponent(txt)}["bDep","bN","bR","bE"].forEach(function(i){$(i).addEventListener("change",c)});$("bGo").addEventListener("click",function(){if(window.rfEvento)rfEvento("click_whatsapp")});c()})();</script></section>
+<div class="btns" style="margin-top:26px"><a class="btn" href="https://wa.me/393930965070?text=Reservad vuestra plaza%20%E2%80%93%20Italian%20Experience">Escribidnos por WhatsApp</a></div></div></section><section id="reserve" class="rsv"><div class="wrap">
+<h2>Arma tu viaje</h2><p class="lead" style="margin-top:12px">Elige la salida, añade tus habitaciones y la extensión. El precio se actualiza al momento; un depósito del 30% asegura vuestras plazas.</p>
+<div class="rs-step"><div class="rs-lab">1 · Salida</div><div class="rs-dep"><label><input type="radio" name="dep" value="harvest" data-alta="1" checked><span><b>Edición Vendimia</b><small>2–11 sep 2027 · vendimia</small></span></label><label><input type="radio" name="dep" value="chestnut" data-alta="0"><span><b>Edición Castañas</b><small>6–15 oct 2027 · otoño en la Tuscia</small></span></label><label><input type="radio" name="dep" value="olive" data-alta="0"><span><b>Edición Aceite Nuevo</b><small>10–19 nov 2027 · aceite nuevo</small></span></label></div></div>
+<div class="rs-step"><div class="rs-lab">2 · Vuestras habitaciones</div><p class="rs-note" style="margin:0 0 10px">Añade una habitación y dinos quién duerme en ella: te damos la habitación adecuada, primero en la finca y luego en nuestro hotel de Orte. Cuantos más compartís habitación, menos paga cada uno. Los niños de 3 a 12 pagan la mitad; menores de 3 gratis y duermen con vosotros.</p><div id="rsRooms"></div><button type="button" class="rs-add" id="rsAdd">+ Añadir habitación</button><p class="rs-note" id="rsMax"></p></div>
+<div class="rs-step"><div class="rs-lab">3 · Extensión <span class="rs-opt">opcional, 4 noches más</span></div><div class="rs-ext">
+<label><input type="radio" name="ext" value="" checked><span><b>Sin extensión</b><small>regreso a Roma el día 10</small></span></label>
+<label><input type="radio" name="ext" value="capri"><span><b>Nápoles y Capri en velero</b><small id="rsCapriP"></small></span></label>
+<label><input type="radio" name="ext" value="venice"><span><b>Milán y Venecia</b><small id="rsVenP"></small></span></label>
+</div><p class="rs-note">La extensión es para todo el grupo. Si solo van algunos, pregúntanos.</p></div>
+<div class="rs-sum" id="rsSum"></div>
+<div class="rs-step"><div class="rs-lab">4 · Vuestros datos</div><div class="rs-grid">
+<label>Nombre y apellidos<input id="rsNome" autocomplete="name" placeholder="Nombre y apellidos"></label>
+<label>Email<input id="rsMail" type="email" autocomplete="email" placeholder="name@email.com"></label>
+<label>WhatsApp<input id="rsTel" type="tel" autocomplete="tel" placeholder="+1 …"></label>
+<label>País<input id="rsPaese" autocomplete="country-name" placeholder="Estados Unidos"></label>
+</div><input class="rs-hp" id="rsHp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button type="button" class="btn rs-pay" id="rsBank">Reservar y pagar por transferencia</button>
+<button type="button" class="btn ghost rs-pay" id="rsAsk">Haznos una pregunta</button>
+<a class="btn ghost rs-pay" id="rsWa" href="https://wa.me/393930965070" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+<p class="rs-note">Transferencia: vuestras plazas quedan reservadas 5 días. Cancelación gratuita hasta 30 días antes de la salida, con el depósito devuelto íntegro. El resto se paga 15 días antes de la llegada.</p>
+<div class="rs-msg" id="rsMsg" hidden></div>
+<div id="rsQ" hidden><div class="rs-ok"><h3>Pregúntanos lo que quieras</h3><p class="rs-note" style="margin:0 0 8px">Fechas, habitaciones, comida, accesibilidad, un grupo privado: escríbenos y respondemos en el día.</p><label style="font-size:14px">Tu pregunta<textarea class="rs-ta" id="rsQm"></textarea></label><button type="button" class="btn rs-pay" id="rsQs">Enviar</button></div></div>
+<div id="rsOk" hidden></div>
+</div></div></section>
+<style>
+.rsv .rs-step{margin-top:26px}.rs-lab{font-weight:600;font-size:18px;margin-bottom:10px}.rs-opt{font-weight:400;font-size:14px;opacity:.7}
+.rs-dep,.rs-ext{display:grid;gap:10px}@media(min-width:760px){.rs-dep,.rs-ext{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.rs-dep label,.rs-ext label{display:block;cursor:pointer}.rs-dep input,.rs-ext input{position:absolute;opacity:0;pointer-events:none}
+.rs-dep span,.rs-ext span{display:block;border:1.5px solid #d6d2c6;border-radius:12px;padding:14px 16px;background:#fff;min-height:64px}
+.rs-dep small,.rs-ext small{display:block;opacity:.7;font-size:14px;margin-top:2px}
+.rs-dep input:checked+span,.rs-ext input:checked+span{border-color:#6b1b2a;box-shadow:0 0 0 2px #6b1b2a inset;background:#fbf6f6}
+.rs-room{border:1.5px solid #d6d2c6;border-radius:12px;padding:14px 16px;background:#fff;margin-bottom:10px}
+.rs-room-h{display:flex;justify-content:space-between;align-items:center;font-weight:600}.rs-x{background:none;border:0;font-size:22px;line-height:1;color:#8a8a82;cursor:pointer;padding:4px 8px}
+.rs-place{margin-bottom:14px}.rs-place h4{margin:0 0 2px;font-size:16px}.rs-place p{margin:0 0 8px;font-size:14px;opacity:.75}
+.rs-cat{display:grid;gap:8px}@media(min-width:760px){.rs-cat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rs-ct{display:flex;justify-content:space-between;align-items:center;gap:10px;border:1.5px solid #d6d2c6;border-radius:12px;padding:10px 12px;background:#fff}
+.rs-ct b{display:block;font-size:15px}.rs-ct small{display:block;font-size:13px;opacity:.7}
+.rs-ct button{flex:none;min-height:40px;padding:6px 14px;border-radius:999px;border:1.5px solid #6b1b2a;background:#fff;color:#6b1b2a;font:inherit;font-weight:600;cursor:pointer}
+.rs-ct button[disabled]{opacity:.35;cursor:default}.rs-empty{font-size:14px;opacity:.7;border:1.5px dashed #d6d2c6;border-radius:12px;padding:12px 14px}
+.rs-occ{display:flex;justify-content:space-between;align-items:center;margin-top:8px}.rs-eta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}.rs-eta label{font-size:13px}.rs-eta select{display:block;width:100%;min-height:42px;margin-top:3px;border:1.5px solid #d6d2c6;border-radius:8px;background:#fff;font:inherit}.rs-eta select.manca{border-color:#c0574a}.rs-tw{display:flex;gap:8px;align-items:center;font-size:14px;margin-top:8px}.rs-auto{margin-top:10px;font-size:15px;background:#f6f2ea;border-radius:8px;padding:8px 10px}.rs-auto.ko{background:#fbe9e6;color:#8a2a1c}
+.rs-types button{min-height:56px;border-radius:10px;border:1.5px solid #d6d2c6;background:#fff;font:inherit;font-size:15px;cursor:pointer;padding:6px}
+.rs-types button small{display:block;font-size:12px;opacity:.7}.rs-types button[aria-pressed=true]{border-color:#6b1b2a;box-shadow:0 0 0 2px #6b1b2a inset;background:#fbf6f6}
+.rs-add{margin-top:4px;min-height:48px;padding:10px 20px;border-radius:999px;border:1.5px dashed #6b1b2a;background:transparent;color:#6b1b2a;font:inherit;font-weight:600;cursor:pointer;width:100%}
+.rs-note{font-size:14px;opacity:.75;margin:8px 0 0}
+.rs-who{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px;border:1.5px solid #d6d2c6;border-radius:12px;padding:10px 16px;background:#fff}
+.rs-cnt{display:flex;align-items:center;gap:12px}.rs-cnt button{width:42px;height:42px;border-radius:50%;border:1.5px solid #6b1b2a;background:#fff;color:#6b1b2a;font-size:22px;cursor:pointer}.rs-cnt output{font-size:22px;min-width:24px;text-align:center}
+.rs-sum{margin-top:26px;border-radius:14px;background:#fff;border:1.5px solid #d6d2c6;padding:16px 18px}
+.rs-sum .l{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #eee9de;font-size:15px}.rs-sum .l span:last-child{white-space:nowrap}
+.rs-sum .t{display:flex;justify-content:space-between;gap:12px;padding-top:10px;font-size:20px;font-weight:600}.rs-sum .d{display:flex;justify-content:space-between;gap:12px;color:#6b1b2a;font-weight:600;padding-top:4px}
+.rs-grid{display:grid;gap:10px}@media(min-width:760px){.rs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rs-grid label{display:block;font-size:14px}.rs-grid input{display:block;width:100%;margin-top:4px;min-height:48px;border:1.5px solid #d6d2c6;border-radius:10px;padding:10px 12px;font:inherit;font-size:16px;background:#fff;box-sizing:border-box}
+.rs-pay{display:block;width:100%;text-align:center;margin-top:12px;box-sizing:border-box}
+.rs-msg{margin-top:14px;border-radius:12px;padding:14px 16px;background:#f4efe3;font-size:15px}
+.rs-ta{display:block;width:100%;margin-top:4px;min-height:110px;border:1.5px solid #d6d2c6;border-radius:10px;padding:10px 12px;font:inherit;font-size:16px;background:#fff;box-sizing:border-box}.rs-hp{position:absolute;left:-9999px;opacity:0}.rs-ok{border:1.5px solid #6b1b2a;background:#fff;border-radius:14px;padding:16px 18px;margin-top:14px}.rs-ok h3{margin:0 0 8px;font-size:20px}.rs-kv{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid #eee9de;font-size:15px;flex-wrap:wrap}.rs-kv b{word-break:break-all}.rs-cp{border:1px solid #d6d2c6;background:#fff;border-radius:8px;padding:4px 10px;font:inherit;font-size:13px;cursor:pointer;margin-left:6px}.film{padding:56px 0}.film-v{display:block;width:100%;max-width:1100px;margin:18px auto 0;border-radius:14px;background:#111;aspect-ratio:16/9;object-fit:cover}@media(max-width:640px){.film-v{aspect-ratio:9/16;max-height:82vh}}</style><script>(function(){
+var $=function(i){return document.getElementById(i)};
+var T={"film_t": "El viaje en 26 segundos", "film_p": "Roma, Florencia, la Toscana, Civita di Bagnoregio, Nápoles y Capri: lugares que vivirás, no solo verás.", "film_b1": "Reserva tu plaza", "film_b2": "Ver el itinerario", "h2": "Arma tu viaje", "lead": "Elige la salida, añade tus habitaciones y la extensión. El precio se actualiza al momento; un depósito del 30% asegura vuestras plazas.", "s1": "1 · Salida", "s2": "2 · Vuestras habitaciones", "s3": "3 · Extensión", "s3o": "opcional, 4 noches más", "s4": "4 · Vuestros datos", "rooms_note": "Añade una habitación y dinos quién duerme en ella: te damos la habitación adecuada, primero en la finca y luego en nuestro hotel de Orte. Cuantos más compartís habitación, menos paga cada uno. Los niños de 3 a 12 pagan la mitad; menores de 3 gratis y duermen con vosotros.", "add": "+ Añadir habitación", "room": "Habitación", "adults": "Adultos", "children": "Niños (0–12)", "child": "Niño", "age": "Edad", "under1": "menos de 1", "year": "año", "years": "años", "twin": "Dos camas individuales", "per_adult": "por adulto", "per_child": "por niño", "single_use": "uso individual", "too_many": "Máximo 5 personas por habitación (más un bebé menor de 3): añade otra habitación.", "no_room": "No queda habitación para {n} en esta salida: repartíos en habitaciones más pequeñas o pregúntanos.", "max_msg": "Máximo 16 personas por salida. Para un grupo más grande, pregúntanos.", "ext_none": "Sin extensión", "ext_none_s": "regreso a Roma el día 10", "ext_capri": "Nápoles y Capri en velero", "ext_venice": "Milán y Venecia", "ext_venice_s": "+{p} por adulto · individual +{s}", "ext_capri_s": "+{p} por adulto · niños la mitad", "ext_note": "La extensión es para todo el grupo. Si solo van algunos, pregúntanos.", "tour": "Viaje de 10 días", "adults_in": "adultos en", "children_in": "niños 3–12 en", "occ": {"1": "habitación individual", "2": "habitación para 2", "3": "habitación para 3", "4": "habitación para 4", "5": "habitación para 5"}, "under3": "Menores de 3", "free": "gratis", "total": "Total", "deposit": "Depósito hoy (30%)", "age_missing": "Indica la edad de cada niño para ver el precio exacto.", "adults_w": "adultos", "child_w": "niño", "children_w": "niños", "nome": "Nombre y apellidos", "nome_ph": "Nombre y apellidos", "email": "Email", "tel": "WhatsApp", "tel_ph": "+1 …", "paese": "País", "paese_ph": "Estados Unidos", "bank": "Reservar y pagar por transferencia", "ask": "Haznos una pregunta", "wa": "Escríbenos por WhatsApp", "cond": "Transferencia: vuestras plazas quedan reservadas 5 días. Cancelación gratuita hasta 30 días antes de la salida, con el depósito devuelto íntegro. El resto se paga 15 días antes de la llegada.", "err_rooms": "Añade primero al menos una habitación.", "err_age": "Indica la edad de cada niño.", "err_room": "Una de tus habitaciones no está disponible: cámbiala primero.", "err_contact": "Indica tu nombre, email y número de WhatsApp.", "err_full": "En esta salida solo quedan {n} plazas. Cambia las habitaciones o pregúntanos.", "err_generic": "Algo ha fallado: inténtalo de nuevo o escríbenos por WhatsApp.", "wait": "Reservando vuestras plazas…", "ok_t": "Vuestras plazas están reservadas hasta el {d}", "ok_code": "Código de reserva", "ok_rooms": "Vuestras habitaciones", "ok_amount": "Depósito a transferir", "ok_benef": "Beneficiario", "ok_iban": "IBAN", "ok_bic": "BIC / SWIFT", "ok_bic_v": "te lo enviamos hoy por email y WhatsApp", "ok_ref": "Concepto", "ok_after": "Cuando hagas la transferencia, envíanos el justificante por WhatsApp: confirmamos tus plazas el mismo día.", "ok_wa": "Enviar el justificante por WhatsApp", "copy": "Copiar", "copied": "Copiado", "q_t": "Pregúntanos lo que quieras", "q_p": "Fechas, habitaciones, comida, accesibilidad, un grupo privado: escríbenos y respondemos en el día.", "q_msg": "Tu pregunta", "q_send": "Enviar", "q_ok": "¡Gracias! Respondemos hoy por email o WhatsApp.", "wa_hi": "¡Hola! Quiero reservar Italian Experience:", "wa_total": "Total", "rooms_w": "habitaciones", "nomi": {"ca2": "Habitación doble", "ca3": "Habitación triple", "ca4": "Habitación familiar", "aqS": "Doble superior", "aqE": "Doble clásica", "aqT": "Habitación twin", "aq3": "Habitación triple", "aq4": "Habitación cuádruple", "aq5": "Suite familiar"}, "loc_ca": "Campo Antico (finca)", "loc_aq": "Hotel Aquila (Orte)"}, LOC="es-ES", US=false, FN="https://cuhcscpvhypoaplcmtjk.supabase.co/functions/v1/tour-prenota", LANG="es";
+var P={base:4900,occ:{1:690,2:0,3:-75,4:-110,5:-150},capriBassa:2600,capriAlta:2900,venice:2900,veniceSingle:390,maxOspiti:16,deposito:0.3,bimboDa:3,bimboA:12,quota:0.5};
+var CAMERE=[{k:"ca2",l:"ca",posti:2,qta:5},{k:"ca3",l:"ca",posti:3,qta:1},{k:"ca4",l:"ca",posti:4,qta:2},{k:"aqS",l:"aq",posti:2,qta:6},{k:"aqE",l:"aq",posti:2,qta:15},{k:"aqT",l:"aq",posti:2,qta:5,twin:true},{k:"aq3",l:"aq",posti:3,qta:2},{k:"aq4",l:"aq",posti:4,qta:1},{k:"aq5",l:"aq",posti:5,qta:1}];
+var LIBERE=null,POSTI=P.maxOspiti,MAX=5,stanze=[{a:2,b:[],twin:false}];
+function eur(n){var e=new Intl.NumberFormat(LOC,{style:"currency",currency:"EUR",maximumFractionDigits:0}).format(n);return US?e+" (≈ "+new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(Math.round(n*1.14/10)*10)+")":e}
+function letto(s){return s.a+s.b.filter(function(e){return e!=null&&e>=P.bimboDa}).length}
+function letti(){return stanze.reduce(function(t,s){return t+letto(s)},0)}
+function etaMancanti(){return stanze.some(function(s){return s.b.some(function(e){return e==null})})}
+function pp(s){return P.base+(P.occ[letto(s)]||0)}
+function meta(x){return Math.round(x*P.quota)}
+function nb(n){return n+" "+(n===1?T.child_w:T.children_w)}
+function dep(){return document.querySelector("input[name=dep]:checked")}
+function ext(){return document.querySelector("input[name=ext]:checked").value}
+function assegna(){var u={},out=[];stanze.forEach(function(s){var need=Math.max(2,letto(s));
+ var lib=CAMERE.filter(function(c){var cap=LIBERE?LIBERE[c.k]:c.qta;return c.posti>=need&&(u[c.k]||0)<cap});
+ var pref=lib.filter(function(c){return s.twin?!!c.twin:!c.twin});
+ var lista=(pref.length?pref:(s.twin?[]:lib)).slice();
+ lista.sort(function(x,y){return (x.posti-y.posti)||((x.l==="ca"?0:1)-(y.l==="ca"?0:1))});
+ var c=lista[0]||null;if(c)u[c.k]=(u[c.k]||0)+1;out.push(c)});return out}
+function cnt(lab,tp,i,v){return '<div class="rs-occ"><span>'+lab+'</span><div class="rs-cnt"><button type="button" data-'+tp+'m="'+i+'" aria-label="-">−</button><output>'+v+'</output><button type="button" data-'+tp+'p="'+i+'" aria-label="+">+</button></div></div>'}
+function disegna(){
+ var ass=assegna(),pieno=letti()>=Math.min(P.maxOspiti,POSTI),r="";
+ stanze.forEach(function(s,i){var c=ass[i],eta="";
+  s.b.forEach(function(e,j){var o='<option value="">'+T.age+'</option>';for(var k=0;k<=P.bimboA;k++)o+='<option value="'+k+'"'+(e===k?' selected':'')+'>'+(k===0?T.under1:k+" "+(k===1?T.year:T.years))+'</option>';
+   eta+='<label>'+T.child+' '+(j+1)+'<select data-eta="'+i+'" data-j="'+j+'"'+(e==null?' class="manca"':'')+'>'+o+'</select></label>'});
+  r+='<div class="rs-room"><div class="rs-room-h"><span>'+T.room+' '+(i+1)+'</span>'+(stanze.length>1?'<button type="button" class="rs-x" data-x="'+i+'" aria-label="×">×</button>':'')+'</div>'
+   +cnt(T.adults,'a',i,s.a)+cnt(T.children,'b',i,s.b.length)+(eta?'<div class="rs-eta">'+eta+'</div>':'')
+   +(s.a===2&&!s.b.length?'<label class="rs-tw"><input type="checkbox" data-tw="'+i+'"'+(s.twin?' checked':'')+'> '+T.twin+'</label>':'')
+   +(letto(s)>MAX?'<div class="rs-auto ko">'+T.too_many+'</div>'
+     :c?'<div class="rs-auto"><b>'+T.nomi[c.k]+'</b> · '+(c.l==="ca"?T.loc_ca:T.loc_aq)+' · '+eur(pp(s))+' '+T.per_adult+(letto(s)===1?' ('+T.single_use+')':'')+(s.b.some(function(e){return e!=null&&e>=P.bimboDa})?' · '+eur(meta(pp(s)))+' '+T.per_child:'')+'</div>'
+     :'<div class="rs-auto ko">'+T.no_room.replace("{n}",letto(s))+'</div>')+'</div>'});
+ $("rsRooms").innerHTML=r;$("rsAdd").hidden=pieno;$("rsMax").textContent=pieno?T.max_msg:"";
+}
+function conti(){
+ var e=ext(),alta=dep().getAttribute("data-alta")==="1",righe=[],ad=0,bim=0,neo=0,sing=0,ga={},gb={};
+ stanze.forEach(function(s){var o=letto(s);ga[o]=(ga[o]||0)+s.a;ad+=s.a;if(o===1)sing+=s.a;
+  s.b.forEach(function(x){if(x==null)return;if(x>=P.bimboDa){gb[o]=(gb[o]||0)+1;bim++}else neo++})});
+ Object.keys(ga).sort().forEach(function(o){var p=P.base+(P.occ[o]||0);
+  if(ga[o])righe.push([T.tour+" · "+T.adults_in+" "+T.occ[o]+" · "+ga[o]+" × "+eur(p),p*ga[o]]);
+  if(gb[o])righe.push([T.tour+" · "+T.children_in+" "+T.occ[o]+" · "+gb[o]+" × "+eur(meta(p)),meta(p)*gb[o]])});
+ if(neo)righe.push([T.under3+" · "+nb(neo),0]);
+ if(e==="capri"){var pc=alta?P.capriAlta:P.capriBassa;righe.push([T.ext_capri+" · "+ad+" "+T.adults_w+" × "+eur(pc)+(bim?" + "+nb(bim)+" × "+eur(meta(pc)):""),pc*ad+meta(pc)*bim])}
+ if(e==="venice"){righe.push([T.ext_venice+" · "+ad+" "+T.adults_w+" × "+eur(P.venice)+(bim?" + "+nb(bim)+" × "+eur(meta(P.venice)):""),P.venice*ad+meta(P.venice)*bim]);if(sing)righe.push([T.ext_venice+" · "+T.single_use+" · "+sing+" × "+eur(P.veniceSingle),P.veniceSingle*sing])}
+ var tot=righe.reduce(function(t,r){return t+r[1]},0);return {righe:righe,tot:tot,depo:Math.round(tot*P.deposito)};
+}
+function aggiorna(){
+ var alta=dep().getAttribute("data-alta")==="1";
+ $("rsCapriP").textContent=T.ext_capri_s.replace("{p}",eur(alta?P.capriAlta:P.capriBassa));
+ $("rsVenP").textContent=T.ext_venice_s.replace("{p}",eur(P.venice)).replace("{s}",eur(P.veniceSingle));
+ var c=conti(),h="";c.righe.forEach(function(r){h+='<div class="l"><span>'+r[0]+'</span><span>'+(r[1]?eur(r[1]):T.free)+'</span></div>'});
+ h+='<div class="t"><span>'+T.total+'</span><span>'+eur(c.tot)+'</span></div><div class="d"><span>'+T.deposit+'</span><span>'+eur(c.depo)+'</span></div>';
+ if(etaMancanti())h+='<p class="rs-note" style="color:#8a2a1c">'+T.age_missing+'</p>';
+ $("rsSum").innerHTML=h;
+ var ass=assegna(),tx=T.wa_hi+"\n- "+dep().parentNode.querySelector("b").textContent+" ("+dep().parentNode.querySelector("small").textContent+")";
+ stanze.forEach(function(s,i){var c=ass[i];tx+="\n- "+(c?T.nomi[c.k]:T.room)+": "+s.a+" "+T.adults_w+(s.b.length?", "+nb(s.b.length)+" ("+s.b.join("/")+")":"")});
+ if(ext())tx+="\n- "+document.querySelector("input[name=ext]:checked").parentNode.querySelector("b").textContent;
+ tx+="\n- "+T.wa_total+" "+eur(c.tot);$("rsWa").href="https://wa.me/393930965070?text="+encodeURIComponent(tx);
+}
+function ridisegna(){stanze.forEach(function(x){if(!(x.a===2&&!x.b.length))x.twin=false});disegna();aggiorna()}
+function libere(){var d=dep().value;fetch(FN,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({azione:"disponibilita",partenza:d})}).then(function(r){return r.json()}).then(function(j){if(j&&j.success&&dep().value===d){LIBERE=j.libere;POSTI=j.posti_liberi;ridisegna()}}).catch(function(){})}
+$("rsRooms").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ var g=function(k){return b.hasAttribute(k)?stanze[+b.getAttribute(k)]:null},s;
+ if(b.hasAttribute("data-x"))stanze.splice(+b.getAttribute("data-x"),1);
+ else if((s=g("data-am"))){if(s.a>1)s.a--}
+ else if((s=g("data-ap"))){if(letto(s)<MAX&&letti()<Math.min(P.maxOspiti,POSTI))s.a++}
+ else if((s=g("data-bm"))){s.b.pop()}
+ else if((s=g("data-bp"))){if(s.a+s.b.length<MAX+1&&letti()<Math.min(P.maxOspiti,POSTI))s.b.push(null)}
+ ridisegna()});
+$("rsRooms").addEventListener("change",function(e){var t=e.target;
+ if(t.hasAttribute("data-tw"))stanze[+t.getAttribute("data-tw")].twin=t.checked;
+ if(t.hasAttribute("data-eta"))stanze[+t.getAttribute("data-eta")].b[+t.getAttribute("data-j")]=t.value===""?null:+t.value;
+ ridisegna()});
+$("rsAdd").addEventListener("click",function(){stanze.push({a:letti()<Math.min(P.maxOspiti,POSTI)-1?2:1,b:[],twin:false});ridisegna()});
+document.querySelectorAll("input[name=dep]").forEach(function(r){r.addEventListener("change",function(){LIBERE=null;POSTI=P.maxOspiti;ridisegna();libere()})});
+document.querySelectorAll("input[name=ext]").forEach(function(r){r.addEventListener("change",aggiorna)});
+function msg(t){var m=$("rsMsg");m.hidden=!t;m.textContent=t||""}
+function contatti(){var ok=$("rsNome").value.trim()&&/\S+@\S+\.\S+/.test($("rsMail").value)&&$("rsTel").value.replace(/\D/g,"").length>5;if(!ok)msg(T.err_contact);return ok}
+function utm(){var q=new URLSearchParams(location.search);return {utm_source:q.get("utm_source")||"",utm_campaign:q.get("utm_campaign")||""}}
+function base(){return Object.assign({nome:$("rsNome").value.trim(),email:$("rsMail").value.trim(),telefono:$("rsTel").value.trim(),paese:$("rsPaese").value.trim(),lingua:LANG,sito_web:$("rsHp").value},utm())}
+function traccia(ev){try{if(window.rfEvento)window.rfEvento({dataset:{track:ev}})}catch(_){}}
+$("rsBank").addEventListener("click",function(){
+ if(!stanze.length){msg(T.err_rooms);return}if(etaMancanti()){msg(T.err_age);return}
+ if(stanze.some(function(s){return letto(s)>MAX})||assegna().some(function(c){return !c})){msg(T.err_room);return}
+ if(!contatti())return;
+ var b=$("rsBank");b.disabled=true;msg(T.wait);
+ fetch(FN,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.assign(base(),{azione:"crea",partenza:dep().value,estensione:ext(),stanze:stanze.map(function(s){return {a:s.a,b:s.b,twin:s.twin}})}))})
+ .then(function(r){return r.json()}).then(function(j){b.disabled=false;
+  if(!j||!j.success){if(j&&j.error==="full"){POSTI=j.posti_liberi;msg(T.err_full.replace("{n}",j.posti_liberi))}else if(j&&j.error==="room_unavailable"){msg(T.err_room);libere()}else msg(T.err_generic);return}
+  msg("");traccia("prenotazione_completata");
+  try{if(window.fbq)fbq("track","Lead",{content_name:"italian-experience",value:j.acconto,currency:"EUR"});if(window.gtag)gtag("event","generate_lead",{value:j.acconto,currency:"EUR"})}catch(_){}
+  var d=new Date(j.scadenza).toLocaleDateString(LOC,{day:"numeric",month:"long",year:"numeric"});
+  var cognome=$("rsNome").value.trim().split(" ").pop(),ref=j.codice+" "+cognome;
+  var kv=function(k,v,cp){return '<div class="rs-kv"><span>'+k+'</span><span><b>'+v+'</b>'+(cp?'<button type="button" class="rs-cp" data-cp="'+cp+'">'+T.copy+'</button>':'')+'</span></div>'};
+  var ibanF=(j.iban||"").replace(/(.{4})/g,"$1 ").trim();
+  var wa="https://wa.me/393930965070?text="+encodeURIComponent(T.ok_wa+" · "+T.ok_code+" "+j.codice);
+  $("rsOk").innerHTML='<div class="rs-ok"><h3>'+T.ok_t.replace("{d}",d)+'</h3>'+kv(T.ok_code,j.codice)+kv(T.ok_rooms,(j.camere||[]).join(", "))+kv(T.ok_amount,eur(j.acconto),String(j.acconto))+kv(T.ok_benef,j.intestatario||"")+kv(T.ok_iban,ibanF,j.iban||"")+kv(T.ok_bic,T.ok_bic_v)+kv(T.ok_ref,ref,ref)+'<p class="rs-note">'+T.ok_after+'</p><a class="btn rs-pay" href="'+wa+'" target="_blank" rel="noopener">'+T.ok_wa+'</a></div>';
+  $("rsOk").hidden=false;$("rsOk").scrollIntoView({behavior:"smooth",block:"start"});
+ }).catch(function(){b.disabled=false;msg(T.err_generic)})});
+$("rsOk").addEventListener("click",function(e){var c=e.target.closest("[data-cp]");if(!c)return;try{navigator.clipboard.writeText(c.getAttribute("data-cp"));c.textContent=T.copied}catch(_){}});
+$("rsAsk").addEventListener("click",function(){$("rsQ").hidden=false;$("rsQm").focus()});
+$("rsQs").addEventListener("click",function(){
+ if(!contatti())return;var t=$("rsQm").value.trim();if(t.length<3){$("rsQm").focus();return}
+ var b=$("rsQs");b.disabled=true;
+ fetch(FN,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(Object.assign(base(),{azione:"info",partenza:dep().value,messaggio:t}))})
+ .then(function(r){return r.json()}).then(function(j){b.disabled=false;if(j&&j.success){$("rsQ").innerHTML='<div class="rs-ok"><h3>'+T.q_ok+'</h3></div>';msg("");traccia("richiesta_info");try{if(window.fbq)fbq("track","Contact")}catch(_){}}else msg(T.err_generic)})
+ .catch(function(){b.disabled=false;msg(T.err_generic)})});
+disegna();aggiorna();libere();
+})();
+</script>
 <section><div class="wrap two"><div><h2>Terminar en el mar, o en Milán y Venecia</h2><h3 style="margin-top:24px">Nápoles y Capri en velero</h3><p class="note">+4 NOCHES · DESDE 2.600 €</p><p>Un día en Nápoles con su centro histórico y la auténtica pizza napolitana, luego tres días navegando por el golfo con vuestro acompañante hasta Capri. Máximo 8 personas por barco. Regreso a Roma en Frecciarossa.</p><p class="note">De junio a septiembre 2.900 €. Mínimo 6 personas por barco.</p><h3 style="margin-top:20px">Milán y Venecia</h3><p class="note">+4 NOCHES · DESDE 2.900 €</p><p>En tren a Milán dos noches, con el Duomo y la Última Cena de Leonardo, y luego dos noches en Venecia con guía local. Regreso a Roma en Frecciarossa.</p></div><img src="https://campoanticowedding.it/img/capri-faraglioni-sailing-tour.jpg" alt="Faraglioni rocks, Capri" width="1100" height="735" loading="lazy" decoding="async"></div></section>
 <section><div class="wrap"><h2>Una auténtica finca italiana, no un hotel</h2><p class="lead" style="margin-top:14px">Campo Antico está en el campo cerca de Orte, a 40 minutos de Roma. Habitaciones rústicas y sencillas, piscina abierta de abril a octubre y la cocina donde nace todo.</p><p class="note">8 habitaciones en la casa · Piscina · abril–octubre · A 40 minutos de Roma</p>
 <div class="strip"><img src="https://campoanticowedding.it/img/farmhouse-room-campo-antico.jpg" alt="A rustic room at Campo Antico" width="800" height="532" loading="lazy" decoding="async"><img src="https://campoanticowedding.it/img/olive-grove-garden-campo-antico.jpg" alt="Olive grove garden at Campo Antico" width="908" height="540" loading="lazy" decoding="async"><img src="https://campoanticowedding.it/img/hotel-aquila-orte-guest-rooms.jpg" alt="Hotel Aquila, 8 km from the farm" width="1100" height="733" loading="lazy" decoding="async"></div></div></section>
