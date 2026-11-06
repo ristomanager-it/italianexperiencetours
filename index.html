@@ -1,4 +1,31 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Italian Experience – 10-day food and wine tour from a family farm near Rome</title><meta name="description" content="Small-group 10-day tour of Italy based on a family farm near Rome: cooking classes with a chef, Antinori in Chianti, Rome and Florence with guides. Up to 16 guests, from €4,900 per person."><link rel="canonical" href="https://italianexperiencetours.com/en/"><link rel="alternate" hreflang="en-US" href="https://italianexperiencetours.com/us/"><link rel="alternate" hreflang="en" href="https://italianexperiencetours.com/en/"><link rel="alternate" hreflang="en-GB" href="https://italianexperiencetours.com/en/"><link rel="alternate" hreflang="de" href="https://italianexperiencetours.com/de/"><link rel="alternate" hreflang="nl" href="https://italianexperiencetours.com/nl/"><link rel="alternate" hreflang="es" href="https://italianexperiencetours.com/es/"><link rel="alternate" hreflang="it" href="https://italianexperiencetours.com/it/"><link rel="alternate" hreflang="ja" href="https://italianexperiencetours.com/ja/"><link rel="alternate" hreflang="x-default" href="https://italianexperiencetours.com/en/">
 <script>var n=(navigator.language||"en").toLowerCase(),L=["de","nl","es","it","ja"],p=n.slice(0,2);location.replace((n=="en-us"?"us":L.indexOf(p)>=0?p:"en")+"/")</script></head>
-<body style="font-family:system-ui;padding:40px"><h1>Italian Experience by Campo Antico</h1><ul><li><a href="us/" hreflang="en-US">English (US)</a></li><li><a href="en/" hreflang="en-GB">English (UK)</a></li><li><a href="de/" hreflang="de">Deutsch</a></li><li><a href="nl/" hreflang="nl">Nederlands</a></li><li><a href="es/" hreflang="es">Español</a></li><li><a href="it/" hreflang="it">Italiano</a></li><li><a href="ja/" hreflang="ja">日本語</a></li></ul></body></html>
+<body style="font-family:system-ui;padding:40px"><h1>Italian Experience by Campo Antico</h1><ul><li><a href="us/" hreflang="en-US">English (US)</a></li><li><a href="en/" hreflang="en-GB">English (UK)</a></li><li><a href="de/" hreflang="de">Deutsch</a></li><li><a href="nl/" hreflang="nl">Nederlands</a></li><li><a href="es/" hreflang="es">Español</a></li><li><a href="it/" hreflang="it">Italiano</a></li><li><a href="ja/" hreflang="ja">日本語</a></li></ul><script>
+/* rf-arrivo v1: come e' arrivato il visitatore (annuncio, condivisione, WhatsApp, app) -> statistiche Ristoflow + Clarity */
+(function(){try{
+if(sessionStorage.getItem('rf_arrivo'))return;
+var p=new URLSearchParams(location.search),ua=navigator.userAgent||'',r=document.referrer||'',src=(p.get('utm_source')||'').toLowerCase();
+var app=/Instagram/.test(ua)?'instagram':/FB_IAB\/MESSENGER|Messenger/.test(ua)?'messenger':/FBAN|FBAV|FB_IAB|FB4A/.test(ua)?'facebook':/WhatsApp/i.test(ua)||/com\.whatsapp/.test(r)?'whatsapp':/Line\//.test(ua)?'line':/Telegram/i.test(ua)||/telegram/.test(r)?'telegram':'browser';
+var da=r?r.replace(/^https?:\/\//,'').split('/')[0]:'';
+var arr;
+if(/%7B%7B|\{\{/.test(location.search)||p.get('utm_content')==='condiviso')arr='condivisione';
+else if((src==='meta'||src==='facebook'||src==='instagram')&&!p.get('fbclid'))arr='condivisione';
+else if((src==='meta'||src==='facebook'||src==='instagram')&&(app==='whatsapp'||app==='messenger'||app==='telegram'))arr='condivisione';
+else if(src==='meta'||src==='facebook'||src==='instagram'||p.get('fbclid'))arr='annuncio_meta';
+else if(p.get('gclid')||p.get('gbraid')||p.get('wbraid')||src==='google')arr='annuncio_google';
+else if(app==='whatsapp'||app==='telegram')arr='messaggio';
+else if(/google\./.test(da))arr='ricerca_google';
+else if(/facebook\.com|instagram\.com/.test(da)||app==='facebook'||app==='instagram')arr='social';
+else if(da&&da!==location.hostname)arr='altro_sito';
+else arr='diretto_o_messaggio';
+sessionStorage.setItem('rf_arrivo',arr);
+var esc=false;try{esc=localStorage.getItem('rf_escludi')==='1';}catch(e){}
+if(!esc)fetch('https://cuhcscpvhypoaplcmtjk.supabase.co/functions/v1/track',{method:'POST',headers:{'Content-Type':'application/json'},keepalive:true,
+body:JSON.stringify({azienda_id:'b331365f-17db-4dda-aa2f-77a09427fe42',pagina:location.hostname+location.pathname,tipo:'arrivo',elemento:arr,valore:da||null,browser:app,
+referrer:r||null,utm_source:p.get('utm_source'),utm_medium:p.get('utm_medium'),utm_campaign:p.get('utm_campaign'),device:/Mobi/.test(ua)?'mobile':'desktop',
+session_id:(function(){try{return sessionStorage.getItem('rf_sid')}catch(e){return null}})()})}).catch(function(){});
+var n=0,iv=setInterval(function(){n++;if(window.clarity){try{clarity('set','arrivo',arr);clarity('set','app',app);if(da)clarity('set','da',da);}catch(e){}clearInterval(iv);}else if(n>60)clearInterval(iv);},2000);
+}catch(e){}})();
+</script>
+</body></html>
